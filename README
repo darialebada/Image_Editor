@@ -52,7 +52,3 @@ Comanda EXIT - inchiderea programului:
 Se elibereaza memoria (doar daca exista o poza incarcata deja in memorie)
 si se termina programul.
 
-Am incercat zile intregi sa imi dau seama de ce nu trece testul 61 pe checkerul local,
-dar nu am reusit sa gasesc eroarea :( Daca se poate, as aprecia o sugestie legata de cum
-sa corectez aceasta eroare. Multumesc frumos!
-
