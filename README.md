@@ -12,7 +12,7 @@ combinatie de rosu, verde si albastru pentru pozele color).
 Citesc fiecare linie din stdin si le prelucrez astfel incat sa obtin toate
 instructiunile necesare. Programul va rula pana cand se citeste comanda EXIT.
 
-### Comanda LOAD - incarcarea in memorie a unei imagini:
+#### Comanda LOAD - incarcarea in memorie a unei imagini:
 Daca exista deja o imagine incarcata, atunci se va elibera memoria inaite de citire.
 Prima data vom deschide fisierul dorit, in format text. Daca acesta se deschide cu
 succes, vom salva pe rand datele din fisier. Prima data aflam cuvantul magic (de
@@ -20,13 +20,13 @@ exemplu P1) cu ajutorul caruia putem afla tipul (ascii/ binar) si culoarea imagi
 (alb-negru, greyscale, color). Apoi se vor citi valorile pixelilor in formatul in care
 se gasesc (ascii/ binar).
 
-### Comanda SELECT - restrangerea efectului comenzilor urmatoare la un interval de pixeli:
+#### Comanda SELECT - restrangerea efectului comenzilor urmatoare la un interval de pixeli:
 Pentru comanda SELECT ALL se vor selecta colturile imaginii (0, 0, inaltime, latime).
 Pentru cand se doreste selectarea unor anumite coordonate, prima data vom verifica
 daca coordonatele sunt valide si in ordine crescatoare. Daca datele sunt corecte, le
 vom selecta.
 
-### Comanda ROTATE - rotirea selectiei curente la un anumit grad:
+#### Comanda ROTATE - rotirea selectiei curente la un anumit grad:
 Prima data verificam coordonatele pentru a afla tipul de rotire: completa sau a unei
 selectii patrate. Vom utiliza o matrice auxiliara in cazul unei rotiri a imaginii
 complete in care vom salva "transpusa" matricei rotite la 90 de grade. Pentru rotirea
@@ -37,17 +37,17 @@ Matricea (imaginea) va fi rotita de cate ori este necesar (de exmplu, pentru ung
 sau de -270 este necesara o singura rotire spre dreapta, in timp ce pentru unghiurile de
 +- 180 doua rotiri spre dreapta).
 
-### Comanda CROP - reducerea imaginii la o anumita selectie:
+#### Comanda CROP - reducerea imaginii la o anumita selectie:
 Copiem valorile din zona dorita intr-o matrice auxiliara, eliberam vechea memorie din
 matrice si salvam noua matrice.
 
-### Comanda APPLY - aplicarea unui filtru asupra selectiei curente:
+#### Comanda APPLY - aplicarea unui filtru asupra selectiei curente:
 In functie de filtrul selectat (edge, sharpen, blur, gaussian blur) se va aplica pe
 fiecare pixel (rosu, verde, albastru) kernelul specific efectului dorit.
 
-### Comanda SAVE - salvarea imaginii curente:
+#### Comanda SAVE - salvarea imaginii curente:
 Se salveaza imaginea in fisierul dorit in formatul ales: ascii sau binar.
 
-### Comanda EXIT - inchiderea programului:
+#### Comanda EXIT - inchiderea programului:
 Se elibereaza memoria (doar daca exista o poza incarcata deja in memorie)
 si se termina programul.
